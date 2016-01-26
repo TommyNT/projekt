@@ -1,0 +1,11 @@
+project_car_rent_homepage:
+    path:     /
+    defaults: { _controller: ProjectCarRentBundle:Default:index }
+
+project_car_rent_menu:
+    path:     /{menu}
+    defaults: { _controller: ProjectCarRentBundle:Default:menu }
+
+project_car_rent_car:
+    path:     /car/{car}
+    defaults: { _controller: ProjectCarRentBundle:Default:car }

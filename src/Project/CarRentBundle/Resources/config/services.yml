@@ -1,0 +1,4 @@
+services:
+#    project_car_rent.example:
+#        class: Project\CarRentBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]
