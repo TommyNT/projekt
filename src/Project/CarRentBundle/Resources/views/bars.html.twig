@@ -1,0 +1,66 @@
+{% extends 'ProjectCarRentBundle::layout.html.twig' %}
+
+{% block header %}
+	<div class="main-header" id="main-header">
+		<div class="nav-tabs">
+			<h1 class="text-primary">Wypożyczalnia samochodów</h1>
+			<ul class="nav nav-tabs bg-danger">
+				<li  class="selected">
+					<a id="homeLink" href="http://v-ie.uek.krakow.pl/~s182452/app_dev.php/" title="Strona domowa">
+						<span class="glyphicon glyphicon-home"></span>
+					</a>
+				</li>
+				<li>
+					<a href="{{path('project_car_rent_menu', {menu: 1})}}">Wszystkie samochody</a>
+				</li>
+				<li>
+					<a href="{{path('project_car_rent_menu', {menu: 2})}}">Popularne marki</a>
+				</li>
+				<li>
+					<a href="{{path('project_car_rent_menu', {menu: 3})}}">Najczęściej oceniane</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+{% endblock %}
+
+{% block sidebar %}
+	<div class="sidebar" id="sidebar">
+		<div class="nav-tabs col-xs-4 col-md-8">
+			<ul class="nav nav-tabs bg-danger">
+				<li>
+					<h4>Wyposażenie</h4>
+					<a href="{{path('project_car_rent_menu', {menu: 4})}}">- ABS</a>
+					<a href="{{path('project_car_rent_menu', {menu: 5})}}">- Autoalarm</a>
+					<a href="{{path('project_car_rent_menu', {menu: 6})}}">- Centralny zamek</a>
+					<a href="{{path('project_car_rent_menu', {menu: 7})}}">- Elektryczne lusterka</a>
+					<a href="{{path('project_car_rent_menu', {menu: 8})}}">- Elektryczne szyby</a>
+					<a href="{{path('project_car_rent_menu', {menu: 9})}}">- Hak</a>
+					<a href="{{path('project_car_rent_menu', {menu: 10})}}">- Immobilizer</a>
+					<a href="{{path('project_car_rent_menu', {menu: 11})}}">- Klimatyzacja</a>
+					<a href="{{path('project_car_rent_menu', {menu: 12})}}">- Komputer pokładowy</a>
+					<a href="{{path('project_car_rent_menu', {menu: 13})}}">- Kontrola trakcji</a>
+					<a href="{{path('project_car_rent_menu', {menu: 14})}}">- Lakier metallic</a>
+					<a href="{{path('project_car_rent_menu', {menu: 15})}}">- Nawigacja GPS</a>
+					<a href="{{path('project_car_rent_menu', {menu: 16})}}">- Poduszka powietrzna</a>
+					<a href="{{path('project_car_rent_menu', {menu: 17})}}">- Radio+CD</a>
+					<a href="{{path('project_car_rent_menu', {menu: 18})}}">- Tempomat</a>
+					<a href="{{path('project_car_rent_menu', {menu: 19})}}">- Wspomaganie kierownicy</a>
+					<h4/>
+					<h4><span class="glyphicon glyphicon-plane">Typ</span></h4>
+					<a href="{{path('project_car_rent_menu', {menu: 20})}}">- hatchback</a>
+					<a href="{{path('project_car_rent_menu', {menu: 21})}}">- sedan</a>
+					<h4/>
+					<h4><span class="glyphicon glyphicon-tint">Paliwo</span></h4>
+					<a href="{{path('project_car_rent_menu', {menu: 22})}}">- benzyna</a>
+					<a href="{{path('project_car_rent_menu', {menu: 23})}}">- diesel</a>
+					<h4/>
+					<h4><span class="glyphicon glyphicon-cog">Skrzynia</span></h4>
+					<a href="{{path('project_car_rent_menu', {menu: 24})}}">- automatyczna</a>
+					<a href="{{path('project_car_rent_menu', {menu: 25})}}">- manualna</a>
+					<h4/>
+				</li>
+			</ul>
+		</div>
+	</div>
+{% endblock %}

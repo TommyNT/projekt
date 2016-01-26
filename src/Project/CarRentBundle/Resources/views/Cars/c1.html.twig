@@ -1,0 +1,94 @@
+{% extends 'ProjectCarRentBundle::bars.html.twig' %}
+
+{% block content %}
+	<div class="container col-xs-12 col-md-12">
+		<div id="opisA">
+			<h1>Ford KA</h1>
+			<table class="table table-hover">
+				<tr class="info">
+					<th colspan="3">Opis samochodu</th>
+				</tr>
+				<tr>
+					<td rowspan="6" class="col-sm-12 col-lg-3 info"><img src="{{asset('bundles/projectcarrent/images/fordka.jpg')}}" class="thumbnail"></td>
+					<td colspan="2">Samochód Ford KA jest typowo miejski samochodem</td>
+				</tr>
+				<tr>
+					<td colspan="2"></td>
+				</tr>
+				<tr>
+					<th><small>Wyposażenie</small></th>
+				</tr>
+				<tr class="info">
+					<td><small>- ABS</small></td>
+					<td><small>- Klimatyzacja</small></td>
+				</tr>
+				<tr>
+					<td><small>- Lakier metallic</small></td>
+					<td><small>- Poduszka powietrzna</small></td>
+				</tr>
+				<tr class="info">
+					<td><small>- Radio+CD</small></td>
+					<td><small>- Wspomaganie kierownicy</small></td>
+				</tr>
+				<tr>
+					<td colspan="2"></td>
+					<td align="right">Ocena: <b>5.0</b> <i>Głosów: <b>37</b></i></td>
+				</tr>
+			</table>
+		<div id="opisB" class="row">
+			<div id="chbar" class="col-sm-12 col-lg-5">
+				<table class="table table-hover">
+					<tr>
+						<th colspan="3"  class="info">Cechy główne Ford KA</th>
+					</tr>
+					<tr>
+						<td><span class="glyphicon glyphicon-plane">Typ</span></td>
+						<td><span class="glyphicon glyphicon-tint">Paliwo</span></td>
+						<td><span class="glyphicon glyphicon-cog">Skrzynia</span></td>
+					</tr>
+					<tr  class="info">
+						<td>hatchback</span></td>
+						<td>benzyna</span></td>
+						<td>manualna</span></td>
+					</tr>
+				</table>
+			</div>
+			<div id="pricelistbar" class="col-sm-12 col-lg-6">
+				<table class="table table-hover">
+					<tr>
+						<th colspan="4" class="info">Cennik</th>
+					</tr>
+					<tr>
+						<td>16-29 dni</td>
+						<td>8-15 dni</td>
+						<td>4-7 dni</td>
+						<td>1-3 dni</td>
+					</tr>
+					<tr  class="info">
+						<td>49 zł</td>
+						<td>55 zł</td>
+						<td>59 zł</td>
+						<td>69 zł</td>
+					</tr>
+					<tr>
+						<td colspan="4"><span class="glyphicon glyphicon-ok">Bez limitu kilometrów!</span></td>
+					</tr>
+					<tr>
+						<td colspan="4"><span class="glyphicon glyphicon-ok">Z pełnym ubezpieczeniem!</span></td>
+					</tr>
+					<tr>
+						<td colspan="4"><span class="glyphicon glyphicon-ok">Bez opłat przygotowawczych!</span></td>
+					</tr>
+					<tr>
+						<td colspan="2" class="info">Kaucja zwrotna:
+						<th colspan="2" class="info">500,00 zł</th></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="container col-xs-12 col-md-12">
+			<div id="order">
+			<a href="" type="button" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-play"></span> Wypożycz</a>
+		<div>
+	</div>
+{% endblock %}
