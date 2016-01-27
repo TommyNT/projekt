@@ -1,9 +1,14 @@
 {% extends 'ProjectCarRentBundle::layout.html.twig' %}
 
 {% block header %}
+<div class="ContextMenuPanel container">
+	<div class="ContextMenuItem Login hidden-xs col-sm-offset-10 col-md-offset-10"><span class="glyphicon glyphicon-log-in"> Zaloguj się</span></div>
+</div>
+<header>	
 	<div class="main-header" id="main-header">
-		<div class="nav-tabs">
+		<div class="nav-tabs">	
 			<h1 class="text-primary">Wypożyczalnia samochodów</h1>
+
 			<ul class="nav nav-tabs bg-danger">
 				<li  class="selected">
 					<a id="homeLink" href="http://v-ie.uek.krakow.pl/~s181169/app_dev.php/" title="Strona domowa">
@@ -11,17 +16,19 @@
 					</a>
 				</li>
 				<li>
-					<a href="{{path('project_car_rent_menu', {menu: 1})}}">Wszystkie samochody</a>
+					<a href="{{path('project_car_rent_menu', {menu: 1})}}"><span class="
+					glyphicon glyphicon-ok-circle"> Wszystkie samochody </span></a>
 				</li>
 				<li>
-					<a href="{{path('project_car_rent_menu', {menu: 2})}}">Popularne marki</a>
+					<a href="{{path('project_car_rent_menu', {menu: 2})}}"><span class ="glyphicon glyphicon-heart"> Popularne marki</span></a>
 				</li>
 				<li>
-					<a href="{{path('project_car_rent_menu', {menu: 3})}}">Najczęściej oceniane</a>
+					<a href="{{path('project_car_rent_menu', {menu: 3})}}"><span class ="glyphicon glyphicon-star"> Najczęściej oceniane</span></a>
 				</li>
 			</ul>
 		</div>
 	</div>
+</header>
 {% endblock %}
 
 {% block sidebar %}

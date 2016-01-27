@@ -1,0 +1,20 @@
+{% extends 'ProjectCarRentBundle::bars.html.twig' %}
+
+{% block content %}
+	<form class="form-inline">
+	  <div class="form-group">
+	    <label class="sr-only" for="nazwaUzytkownika">Użytkownik</label>
+	    <input type="user" class="form-control" id="nazwaUzytkownika" placeholder="Użytkownik">
+	  </div>
+	  <div class="form-group">
+	    <label class="sr-only" for="haslo">Hasło</label>
+	    <input type="Hasło" class="form-control" id="haslo" placeholder="Hasło">
+	  </div>
+	  <div class="checkbox">
+	    <label>
+	      <input type="checkbox"> Zapamiętaj mnie
+	    </label>
+	  </div>
+	  <button type="submit" class="btn btn-default">Zaloguj</button>
+	</form>
+{% endblock %}
