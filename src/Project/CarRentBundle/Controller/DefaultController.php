@@ -20,4 +20,5 @@ class DefaultController extends Controller
     {
         return $this->render('ProjectCarRentBundle:Cars:c'.$car.'.html.twig', array('car'=>$car));
     }
+
 }

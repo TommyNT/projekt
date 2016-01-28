@@ -9,3 +9,7 @@ project_car_rent_menu:
 project_car_rent_car:
     path:     /car/{car}
     defaults: { _controller: ProjectCarRentBundle:Default:car }
+
+project_car_rent_login:
+    path: /login
+    defaults: { _controller: ProjectCarRentBundle:Login:login }
