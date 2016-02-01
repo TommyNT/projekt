@@ -11,8 +11,6 @@
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 
-		<link rel="stylesheet" type="text/css" href="{{asset('bundles/projectcarrent/css/style.css')}}">
-
 		<div class="ContextMenuPanel container">
 			<div class="ContextMenuItem Login hidden-xs col-sm-offset-10 col-md-offset-10"><a href="{{path('login')}}"><span class="glyphicon glyphicon-log-in"> Zaloguj się</span></a></div>
 		</div>
@@ -29,11 +27,12 @@
 		</header>
 		<div class="container">
 			<div class="row">
-				<div id="sidebar" class="col-sm-12 col-lg-4">
+				<div id="sidebar" class="col-sm-12 col-lg-3">
 					{% block sidebar %}
 						
 					{% endblock %}
 				</div>
+			
 				<div id="content" class="col-sm-12 col-lg-8">
 					{% block content %}
 						
