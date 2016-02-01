@@ -1,0 +1,30 @@
+{% extends 'ProjectCarRentBundle::layoutLogin.html.twig' %}
+
+{% block content %}
+	<img src="{{asset('bundles/projectcarrent/images/homepicture.jpg')}}" class="thumbnail">
+{% endblock %}
+
+
+{% block sidebar %}
+{% if error %}
+     <div>{{ error.message }}</div>
+ {% endif %}
+
+<form action="" method="post">
+	<div class="container">
+	    <div class="row">
+		    <div class="col-md-3">
+			    <label for="username">Użytkownik:</label>
+			    <input class="form-control input-sm chat-input" type="text" id="username" name="_username" value="{{ last_username }}" />
+
+			    <label for="password">Hasło:</label>
+			    <input class="form-control input-sm chat-input" type="password" id="password" name="_password" />
+			     
+			    <input type="hidden" name="_target_path" value="/homepage" />
+			     
+			    <button type="submit" class="btn btn-primary btn-md">Zaloguj się</button>
+			</div>
+        </div>
+    </div>
+</form>
+{% endblock %}

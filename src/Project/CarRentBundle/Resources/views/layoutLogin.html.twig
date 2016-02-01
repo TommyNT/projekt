@@ -13,38 +13,35 @@
 
 		<link rel="stylesheet" type="text/css" href="{{asset('bundles/projectcarrent/css/style.css')}}">
 
-		<div class="ContextMenuPanel container">
-			<div class="ContextMenuItem Login hidden-xs col-sm-offset-10 col-md-offset-10"><a href="{{url('login')}}"><span class="glyphicon glyphicon-log-in"> Zaloguj się</span></a></div>
-		</div>
-
 		<title>Wypożyczalnia samochodów</title>
-	</head>
+	</head>	
 	<body class="col-xs-12 col-md-12">
 		<header class="page-header bg-info "  id="page-header">
 			<div class="container text-center">
-				{% block header %}
-					
-				{% endblock %}
-			</div>
+			<h1 class="text-primary">Wypożyczalnia samochodów</h1>
+			<ul class="nav nav-tabs bg-danger">
+				<li  class="selected">
+					<a id="homeLink" href="http://v-ie.uek.krakow.pl/~s181169/app_dev.php/homepage" title="Strona domowa">
+						<span class="glyphicon glyphicon-home"> Strona główna </span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
 		</header>
 		<div class="container">
 			<div class="row">
 				<div id="sidebar" class="col-sm-12 col-lg-4">
 					{% block sidebar %}
-						
+
 					{% endblock %}
 				</div>
 				<div id="content" class="col-sm-12 col-lg-8">
 					{% block content %}
-						
+
 					{% endblock %}
 				</div>
 			</div>
 		</div>
-		<footer>
-			<div class="container">
-
-			</div>
-		</footer>
-	</body>
+	</body>	
 </html>

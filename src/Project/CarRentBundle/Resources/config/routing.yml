@@ -1,11 +1,16 @@
+login:
+    pattern:   /
+    defaults:  { _controller: ProjectCarRentBundle:Login:login }
+
+
 project_car_rent_homepage:
-    path:     /
+    path:     /homepage
     defaults: { _controller: ProjectCarRentBundle:Default:index }
 
 project_car_rent_menu:
-    path:     /{menu}
+    path:     /homepage/{menu}
     defaults: { _controller: ProjectCarRentBundle:Default:menu }
 
 project_car_rent_car:
-    path:     /car/{car}
+    path:     /homepage/car/{car}
     defaults: { _controller: ProjectCarRentBundle:Default:car }
