@@ -1,0 +1,11 @@
+Project\CarRentBundle\Entity\Users:
+    type: entity
+    table: fos_user
+    repositoryClass: Project\CarRentBundle\Repository\UsersRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    lifecycleCallbacks: {  }
