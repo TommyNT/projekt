@@ -30,6 +30,6 @@ public function __construct()
 parent::__construct();
 // your own logic
 
-$this->userId = new ArrayCollection();
+// $this->userId = new ArrayCollection();
 }
 }
