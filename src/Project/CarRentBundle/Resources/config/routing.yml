@@ -2,6 +2,9 @@ login:
     path:   /
     defaults:  { _controller: FOSUserBundle:Security:login }
 
+orders:
+    path:   /homepage/orders
+    defaults:  { _controller: ProjectCarRentBundle:Orders:orders }
 
 project_car_rent_homepage:
     path:     /homepage
