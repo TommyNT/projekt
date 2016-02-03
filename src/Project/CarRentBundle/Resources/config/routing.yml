@@ -1,6 +1,6 @@
 login:
     path:   /
-    defaults:  { _controller: ProjectCarRentBundle:Login:login }
+    defaults:  { _controller: FOSUserBundle:Security:login }
 
 
 project_car_rent_homepage:
@@ -14,3 +14,4 @@ project_car_rent_menu:
 project_car_rent_car:
     path:     /homepage/car/{car}
     defaults: { _controller: ProjectCarRentBundle:Default:car }
+
