@@ -1,0 +1,20 @@
+Project\CarRentBundle\Entity\Orders:
+    type: entity
+    table: null
+    repositoryClass: Project\CarRentBundle\Repository\OrdersRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        userId:
+            type: integer
+            unique: true
+            column: user_id
+        carId:
+            type: integer
+            unique: true
+            column: car_id
+    lifecycleCallbacks: {  }
