@@ -46,6 +46,15 @@ class Car
 
 
     /**
+     * @ManyToMany(targetEntity="Orders")
+     * @JoinTable(name="car_orders",
+     *      joinColumns={@JoinColumn(name="id", referencedColumnName="car_id")},
+     *      inverseJoinColumns={@JoinColumn(name="orders_id", referencedColumnName="id")}
+     *      )
+     */
+    private $orders;
+
+    /**
      * Get id
      *
      * @return integer 
